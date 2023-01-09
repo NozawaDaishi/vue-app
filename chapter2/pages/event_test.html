@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vue.js</title>
+  </head>
+  <body>
+    <div id="app">
+      <img
+        v-bind:src="path"
+        alt="ロゴ画像"
+        v-on:mouseenter="onmouseenter"
+        v-on:mouseleave="onmouseleave"
+      />
+    </div>
+    <script src="../lib/vue.global.js"></script>
+    <script src="../js/event_test.js"></script>
+  </body>
+</html>
