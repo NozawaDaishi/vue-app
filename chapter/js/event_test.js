@@ -1,12 +1,7 @@
 Vue.createApp({
-  data() {
-    return {
-      path: "../images/wings.jpg",
-    };
-  },
   methods: {
-    onerror() {
-      this.path = "../images/noimage.jpg";
+    onclick(ev) {
+      console.log(ev);
     },
   },
 }).mount("#app");
