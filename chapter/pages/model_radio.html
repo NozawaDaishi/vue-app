@@ -7,16 +7,16 @@
   <body>
     <div id="app">
       <form>
-        <label for="dog">いぬ</label>
-        <input type="radio" id="dog" value="いぬ" v-model="pet" />
-        <br />
-        <label for="dog">ねこ</label>
-        <input type="radio" id="cat" value="ねこ" v-model="pet" />
-        <br />
-        <label for="dog">その他</label>
-        <input type="radio" id="other" value="その他" v-model="pet" />
+        <label for="agree">同意する：</label>
+        <input
+          type="checkbox"
+          id="agree"
+          v-model="agree"
+          true-value="yes"
+          false-value="no"
+        />
       </form>
-      <p>ペット：{{pet}}</p>
+      <p>回答：{{agree}}</p>
     </div>
     <script src="../lib/vue.global.js"></script>
     <script src="../js/model_radio.js"></script>

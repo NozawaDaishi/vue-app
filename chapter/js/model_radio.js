@@ -1,7 +1,7 @@
 Vue.createApp({
   data() {
     return {
-      pet: "いぬ",
+      agree: true,
     };
   },
 }).mount("#app");
