@@ -8,12 +8,12 @@
     <div id="app">
       <form>
         <div>お使いのOSは？</div>
-        <label for="windows">Windows</label>
-        <input type="checkbox" id="windows" value="Windows" v-model="os" />
-        <label for="linux">Linux</label>
-        <input type="checkbox" id="linux" value="Linux" v-model="os" />
-        <label for="mac">macOS</label>
-        <input type="checkbox" id="mac" value="macOS" v-model="os" />
+        <select v-model="os" multiple size="3">
+          <option value="">OSを選択してください</option>
+          <option>Windows</option>
+          <option>Linux</option>
+          <option>macOS</option>
+        </select>
       </form>
       <p>回答：{{os}}</p>
     </div>
