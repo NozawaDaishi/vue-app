@@ -1,7 +1,7 @@
 Vue.createApp({
   data() {
     return {
-      agree: true,
+      os: ["Windows", "macOS"],
     };
   },
 }).mount("#app");
